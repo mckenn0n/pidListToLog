@@ -2,6 +2,7 @@
 #include <linux/kernel.h>
 #include <linux/sched.h>
 #include <linux/init.h>
+#include <linux/init_task.h>
 
 void DFS(struct task_struct *task){   
     struct task_struct *child;

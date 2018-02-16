@@ -2,6 +2,7 @@
 #include <linux/kernel.h>
 #include <linux/sched.h>
 #include <linux/init.h>
+#include <linux/init_task.h>
 
 int pid_init(void){
 	struct task_struct *task;
