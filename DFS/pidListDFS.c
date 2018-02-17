@@ -17,7 +17,7 @@ void DFS(struct task_struct *task){
 
 
 int DFS_init(void){
-    printk(KERN_INFO "Removing Module\n");
+    printk(KERN_INFO "Loading Module\n");
     DFS(&init_task);
 
     return 0;
@@ -25,7 +25,7 @@ int DFS_init(void){
 
 
 void DFS_exit(void){
-    printk(KERN_INFO "Removing Task Lister Module...\n");
+    printk(KERN_INFO "Removing Module...\n");
 }
 
 module_init(DFS_init);

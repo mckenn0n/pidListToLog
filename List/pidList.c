@@ -10,7 +10,7 @@ int pid_init(void){
 	printk(KERN_INFO "Loading Module\n");
 
 	for_each_process(task){
-	   printk("Name: %s PID: [%d]\n", task->comm, task->pid);
+	   printk("Name: %s PID: [%d], state: %li\n", task->comm, task->pid, task->state);
 	}
 	return 0;
 }
